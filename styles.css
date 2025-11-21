@@ -1,30 +1,160 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
 header {
-    text-align: center; /* Center the header content */
-    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 header img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* This makes the image a circle */
-    border: 4px solid #ffffff; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    border-radius: 50%;
+    object-fit: cover;
 }
 
+header h1 {
+    margin: 10px 0;
+    font-size: 2.4rem;
+    color: #222;
+}
+
+header h2 {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* About Me */
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Interests */
+.interests ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.interests li {
+    margin: 8px 0;
+}
+
+/* Projects Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.feature-item h3 {
+    margin-top: 0;
+}
+
+/* Contact Form */
+form .form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.submit-button:hover {
+    background-color: #3367d6;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 2px solid #f0f4f8; /* A line to separate the footer */
-    font-size: 0.9em;
-    color: #777;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: #666;
 }
 
 footer a {
-    color: #005a9c; /* Use the same blue as our h2 */
-    text-decoration: none; /* Remove the underline */
+    color: #4285f4;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Add underline back on hover */
+    text-decoration: underline;
 }
